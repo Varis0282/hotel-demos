@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <main>
       <PageHero kicker="Booking" title={t.booking.title} sub={t.booking.sub} />
-      <section className="mx-auto grid max-w-6xl gap-10 px-4 py-10 lg:grid-cols-[1.2fr_1fr]">
+      <section id="book" className="scroll-mt-28 mx-auto grid max-w-6xl gap-10 px-4 py-10 lg:grid-cols-[1.2fr_1fr]">
         <BookingForm styles={bookingStyles} />
         <div>
           <div className="divide-y divide-black/10 border-y-2 border-[#1A1A1A]">

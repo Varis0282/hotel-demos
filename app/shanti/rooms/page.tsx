@@ -26,7 +26,7 @@ export default function Rooms() {
                     <li key={f} className="text-sm text-black/70">— {f}</li>
                   ))}
                 </ul>
-                <Link href="/shanti/contact" className="mt-6 inline-block bg-[#1A1A1A] px-6 py-3 font-bold text-white transition hover:bg-[#4338CA]">{t.misc.bookRoom}</Link>
+                <Link href="/shanti/contact#book" className="mt-6 inline-block bg-[#1A1A1A] px-6 py-3 font-bold text-white transition hover:bg-[#4338CA]">{t.misc.bookRoom}</Link>
               </div>
               <img src={img.rooms[r.photo]} alt={pick(r, lang).title} className="aspect-[4/3] w-full object-cover grayscale-[0.35]" />
             </div>

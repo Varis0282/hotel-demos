@@ -28,7 +28,7 @@ export default function Rooms() {
                   <li key={f} className="flex items-start gap-2 text-sm text-[#5C4630]"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#2E7D5B]" />{f}</li>
                 ))}
               </ul>
-              <Link href="/kesar/contact" className="mt-6 inline-block rounded-full bg-[#8A2E2E] px-6 py-3 font-bold text-[#FFE9C9] transition hover:brightness-110">{t.misc.bookRoom}</Link>
+              <Link href="/kesar/contact#book" className="mt-6 inline-block rounded-full bg-[#8A2E2E] px-6 py-3 font-bold text-[#FFE9C9] transition hover:brightness-110">{t.misc.bookRoom}</Link>
             </div>
           </article>
         ))}

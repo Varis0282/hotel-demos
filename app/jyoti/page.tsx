@@ -25,7 +25,7 @@ export default function Home() {
           {t.hero.sub}
         </motion.p>
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.4 }} className="mt-9 flex flex-wrap justify-center gap-4">
-          <Link href="/jyoti/contact" className="rounded-full bg-gradient-to-r from-[#FFB03A] to-[#FF6B6B] px-8 py-4 font-bold text-[#150E1F] shadow-xl shadow-[#FFB03A]/30 transition hover:scale-105">{t.hero.cta1}</Link>
+          <Link href="/jyoti/contact#book" className="rounded-full bg-gradient-to-r from-[#FFB03A] to-[#FF6B6B] px-8 py-4 font-bold text-[#150E1F] shadow-xl shadow-[#FFB03A]/30 transition hover:scale-105">{t.hero.cta1}</Link>
           <a href={`tel:${hotel.phoneRaw}`} className="rounded-full border border-white/25 px-8 py-4 font-bold transition hover:bg-white/10">{t.hero.cta2}</a>
         </motion.div>
         <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.5 }} className="relative mx-auto mt-14 max-w-4xl">
@@ -58,7 +58,7 @@ export default function Home() {
                   <h3 className="text-lg font-bold">{pick(r, lang).title}</h3>
                   <p className="mt-1 text-sm font-semibold text-[#FF6B6B]">{pick(r, lang).occupancy}</p>
                   <p className="mt-2 text-sm text-white/60">{pick(r, lang).desc}</p>
-                  <Link href="/jyoti/contact" className="mt-4 inline-block rounded-full border border-[#FFB03A]/50 px-5 py-2 text-sm font-bold text-[#FFB03A] transition hover:bg-[#FFB03A] hover:text-[#150E1F]">{t.misc.bookRoom}</Link>
+                  <Link href="/jyoti/contact#book" className="mt-4 inline-block rounded-full border border-[#FFB03A]/50 px-5 py-2 text-sm font-bold text-[#FFB03A] transition hover:bg-[#FFB03A] hover:text-[#150E1F]">{t.misc.bookRoom}</Link>
                 </div>
               </article>
             </FadeIn>

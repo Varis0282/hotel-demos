@@ -21,7 +21,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-xl text-lg text-[#EFE7DA]/60">{t.hero.sub}</p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link href="/rajwada/contact" className="bg-[#C77B3F] px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-[#12100C] transition hover:brightness-110">{t.hero.cta1}</Link>
+              <Link href="/rajwada/contact#book" className="bg-[#C77B3F] px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-[#12100C] transition hover:brightness-110">{t.hero.cta1}</Link>
               <a href={`tel:${hotel.phoneRaw}`} className="border border-[#EFE7DA]/30 px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] transition hover:border-[#EFE7DA]">{t.hero.cta2}</a>
             </div>
             <p className="mt-6 text-xs uppercase tracking-[0.25em] text-[#C77B3F]/80">{t.hero.open}</p>

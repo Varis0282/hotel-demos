@@ -26,7 +26,7 @@ export default function Home() {
             <Squiggle className="mt-3" />
             <p className="mt-5 text-lg text-[#7A6248]">{t.hero.sub}</p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/kesar/contact" className="rounded-full bg-[#E8850C] px-7 py-3.5 font-extrabold text-white shadow-lg transition hover:scale-105">{t.hero.cta1}</Link>
+              <Link href="/kesar/contact#book" className="rounded-full bg-[#E8850C] px-7 py-3.5 font-extrabold text-white shadow-lg transition hover:scale-105">{t.hero.cta1}</Link>
               <a href={`tel:${hotel.phoneRaw}`} className="rounded-full border-2 border-[#8A2E2E] px-7 py-3.5 font-bold text-[#8A2E2E] transition hover:bg-[#8A2E2E] hover:text-[#FFE9C9]">{t.hero.cta2}</a>
             </div>
             <p className="mt-5 flex items-center gap-2 text-sm font-bold text-[#2E7D5B]"><CheckCircle2 className="h-4 w-4" />{t.hero.open}</p>
@@ -60,7 +60,7 @@ export default function Home() {
                   <p className="mt-1 text-2xl font-extrabold text-[#E8850C]">{r.price} <span className="text-sm font-semibold text-[#B9834C]">/ {pick(r.per, lang)}</span></p>
                   <p className="mt-1 text-sm font-bold text-[#2E7D5B]">{pick(r, lang).occupancy}</p>
                   <p className="mt-2 text-sm text-[#7A6248]">{pick(r, lang).desc}</p>
-                  <Link href="/kesar/contact" className="mt-4 inline-block rounded-full bg-[#8A2E2E] px-5 py-2 text-sm font-bold text-[#FFE9C9] hover:brightness-110">{t.misc.bookRoom}</Link>
+                  <Link href="/kesar/contact#book" className="mt-4 inline-block rounded-full bg-[#8A2E2E] px-5 py-2 text-sm font-bold text-[#FFE9C9] hover:brightness-110">{t.misc.bookRoom}</Link>
                 </div>
               </article>
             ))}

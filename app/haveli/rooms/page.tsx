@@ -28,7 +28,7 @@ export default function Rooms() {
                   <li key={f} className="flex items-start gap-2 text-sm text-[#3C4442]"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" />{f}</li>
                 ))}
               </ul>
-              <Link href="/haveli/contact" className="mt-6 inline-block rounded-lg bg-[#0F5E63] px-6 py-3 font-bold text-white transition hover:brightness-110">{t.misc.bookRoom}</Link>
+              <Link href="/haveli/contact#book" className="mt-6 inline-block rounded-lg bg-[#0F5E63] px-6 py-3 font-bold text-white transition hover:brightness-110">{t.misc.bookRoom}</Link>
             </div>
           </article>
         ))}

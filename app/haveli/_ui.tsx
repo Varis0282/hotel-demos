@@ -52,7 +52,7 @@ export function Nav() {
             {links.map((l) => (
               <Link key={l.href} href={l.href} className={`text-sm font-semibold transition hover:text-[#0F5E63] ${path === l.href ? "text-[#0F5E63] underline underline-offset-8 decoration-[#B98A2F] decoration-2" : "text-[#5B615F]"}`}>{l.label}</Link>
             ))}
-            <Link href="/haveli/contact" className="rounded-lg bg-[#B98A2F] px-5 py-2.5 text-sm font-bold text-white shadow transition hover:brightness-110">{t.nav.book}</Link>
+            <Link href="/haveli/contact#book" className="rounded-lg bg-[#B98A2F] px-5 py-2.5 text-sm font-bold text-white shadow transition hover:brightness-110">{t.nav.book}</Link>
           </nav>
           <button onClick={() => setOpen(!open)} className="ml-auto text-[#0F5E63] lg:hidden" aria-label="Menu">{open ? <X /> : <Menu />}</button>
         </div>
@@ -61,7 +61,7 @@ export function Nav() {
             {links.map((l) => (
               <Link key={l.href} href={l.href} onClick={() => setOpen(false)} className="block py-2.5 font-semibold text-[#3C4442]">{l.label}</Link>
             ))}
-            <Link href="/haveli/contact" onClick={() => setOpen(false)} className="mt-2 block rounded-lg bg-[#B98A2F] px-5 py-2.5 text-center font-bold text-white">{t.nav.book}</Link>
+            <Link href="/haveli/contact#book" onClick={() => setOpen(false)} className="mt-2 block rounded-lg bg-[#B98A2F] px-5 py-2.5 text-center font-bold text-white">{t.nav.book}</Link>
           </nav>
         )}
       </div>
@@ -163,7 +163,7 @@ export function CTABand() {
         <h2 className="font-[family-name:var(--font-lora)] text-3xl font-bold text-white md:text-4xl">{t.sections.ctaTitle}</h2>
         <p className="mt-3 text-white/80">{t.sections.ctaSub}</p>
         <div className="mt-7 flex flex-wrap justify-center gap-4">
-          <Link href="/haveli/contact" className="rounded-lg bg-[#B98A2F] px-7 py-3.5 font-bold text-white shadow-lg transition hover:brightness-110">{t.hero.cta1}</Link>
+          <Link href="/haveli/contact#book" className="rounded-lg bg-[#B98A2F] px-7 py-3.5 font-bold text-white shadow-lg transition hover:brightness-110">{t.hero.cta1}</Link>
           <a href={`tel:${hotel.phoneRaw}`} className="rounded-lg border-2 border-white/60 px-7 py-3.5 font-bold text-white transition hover:bg-white/10">{t.hero.cta2}</a>
         </div>
       </div>

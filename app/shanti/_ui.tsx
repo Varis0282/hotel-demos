@@ -41,7 +41,7 @@ export function Nav() {
           ))}
           <Link href="/" className="text-xs text-black/40 hover:text-black/70">← All demos</Link>
           <LangToggle className="border-2 border-[#1A1A1A] px-3 py-1 text-xs font-black hover:bg-[#1A1A1A] hover:text-white" />
-          <Link href="/shanti/contact" className="bg-[#4338CA] px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#1A1A1A]">{t.nav.book}</Link>
+          <Link href="/shanti/contact#book" className="bg-[#4338CA] px-5 py-2.5 text-sm font-bold text-white transition hover:bg-[#1A1A1A]">{t.nav.book}</Link>
         </nav>
         <button onClick={() => setOpen(!open)} className="ml-auto lg:hidden" aria-label="Menu">{open ? <X /> : <Menu />}</button>
       </div>
@@ -144,7 +144,7 @@ export function CTABand() {
         <h2 className="mt-4 max-w-3xl text-4xl font-black tracking-tight md:text-5xl">{t.sections.ctaTitle}</h2>
         <p className="mt-4 max-w-xl text-white/60">{t.sections.ctaSub}</p>
         <div className="mt-9 flex flex-wrap gap-4">
-          <Link href="/shanti/contact" className="bg-[#4338CA] px-8 py-4 font-bold transition hover:bg-white hover:text-[#1A1A1A]">{t.hero.cta1}</Link>
+          <Link href="/shanti/contact#book" className="bg-[#4338CA] px-8 py-4 font-bold transition hover:bg-white hover:text-[#1A1A1A]">{t.hero.cta1}</Link>
           <a href={`tel:${hotel.phoneRaw}`} className="border-2 border-white/40 px-8 py-4 font-bold transition hover:border-white">{t.hero.cta2}</a>
         </div>
       </div>

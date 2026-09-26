@@ -29,7 +29,7 @@ export default function Rooms() {
                     <li key={f} className="flex items-start gap-2 text-sm text-white/75"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#FFB03A]" />{f}</li>
                   ))}
                 </ul>
-                <Link href="/jyoti/contact" className="mt-6 inline-block rounded-full bg-gradient-to-r from-[#FFB03A] to-[#FF6B6B] px-6 py-3 font-bold text-[#150E1F] transition hover:scale-105">{t.misc.bookRoom}</Link>
+                <Link href="/jyoti/contact#book" className="mt-6 inline-block rounded-full bg-gradient-to-r from-[#FFB03A] to-[#FF6B6B] px-6 py-3 font-bold text-[#150E1F] transition hover:scale-105">{t.misc.bookRoom}</Link>
               </div>
             </article>
           </FadeIn>

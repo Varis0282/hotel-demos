@@ -59,7 +59,7 @@ export function Nav() {
           ))}
           <Link href="/" className="text-xs text-white/40 hover:text-white/70">← All demos</Link>
           <LangToggle className="rounded-full border border-white/20 px-3 py-1 text-xs font-bold hover:bg-white/10" />
-          <Link href="/jyoti/contact" className="rounded-full bg-gradient-to-r from-[#FFB03A] to-[#FF6B6B] px-5 py-2 text-sm font-bold text-[#150E1F] shadow-lg shadow-[#FFB03A]/25 transition hover:shadow-[#FFB03A]/40">{t.nav.book}</Link>
+          <Link href="/jyoti/contact#book" className="rounded-full bg-gradient-to-r from-[#FFB03A] to-[#FF6B6B] px-5 py-2 text-sm font-bold text-[#150E1F] shadow-lg shadow-[#FFB03A]/25 transition hover:shadow-[#FFB03A]/40">{t.nav.book}</Link>
         </nav>
         <button onClick={() => setOpen(!open)} className="ml-auto lg:hidden" aria-label="Menu">{open ? <X /> : <Menu />}</button>
       </div>
@@ -202,7 +202,7 @@ export function CTABand() {
             <h2 className="text-3xl font-extrabold md:text-4xl">{t.sections.ctaTitle}</h2>
             <p className="mt-3 text-white/70">{t.sections.ctaSub}</p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Link href="/jyoti/contact" className="rounded-full bg-gradient-to-r from-[#FFB03A] to-[#FF6B6B] px-8 py-4 font-bold text-[#150E1F] shadow-xl shadow-[#FFB03A]/30 transition hover:scale-105">{t.hero.cta1}</Link>
+              <Link href="/jyoti/contact#book" className="rounded-full bg-gradient-to-r from-[#FFB03A] to-[#FF6B6B] px-8 py-4 font-bold text-[#150E1F] shadow-xl shadow-[#FFB03A]/30 transition hover:scale-105">{t.hero.cta1}</Link>
               <a href={`tel:${hotel.phoneRaw}`} className="rounded-full border border-white/30 px-8 py-4 font-bold transition hover:bg-white/10">{t.hero.cta2}</a>
             </div>
           </div>

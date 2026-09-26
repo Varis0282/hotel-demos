@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <main>
       <PageHero title={t.booking.title} sub={t.booking.sub} />
-      <section className="mx-auto grid max-w-6xl gap-8 px-4 py-16 lg:grid-cols-[1.2fr_1fr]">
+      <section id="book" className="scroll-mt-28 mx-auto grid max-w-6xl gap-8 px-4 py-16 lg:grid-cols-[1.2fr_1fr]">
         <BookingForm styles={bookingStyles} />
         <div className="space-y-4">
           {[

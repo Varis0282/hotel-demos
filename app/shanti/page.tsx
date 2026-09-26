@@ -20,7 +20,7 @@ export default function Home() {
         <div className="mt-8 grid gap-8 border-t-2 border-[#1A1A1A] pt-6 md:grid-cols-[1fr_auto]">
           <p className="max-w-xl text-lg text-black/60">{t.hero.sub}</p>
           <div className="flex flex-wrap items-start gap-4">
-            <Link href="/shanti/contact" className="bg-[#4338CA] px-7 py-4 font-bold text-white transition hover:bg-[#1A1A1A]">{t.hero.cta1}</Link>
+            <Link href="/shanti/contact#book" className="bg-[#4338CA] px-7 py-4 font-bold text-white transition hover:bg-[#1A1A1A]">{t.hero.cta1}</Link>
             <a href={`tel:${hotel.phoneRaw}`} className="border-2 border-[#1A1A1A] px-7 py-4 font-bold transition hover:bg-[#1A1A1A] hover:text-white">{t.hero.cta2}</a>
           </div>
         </div>

@@ -29,7 +29,7 @@ export default function Rooms() {
                   <li key={f} className="flex items-start gap-3 text-sm text-[#EFE7DA]/70"><Check className="mt-0.5 h-4 w-4 shrink-0 text-[#C77B3F]" />{f}</li>
                 ))}
               </ul>
-              <Link href="/rajwada/contact" className="mt-7 inline-block border border-[#C77B3F] px-7 py-3 text-xs font-bold uppercase tracking-[0.2em] text-[#C77B3F] transition hover:bg-[#C77B3F] hover:text-[#12100C]">{t.misc.bookRoom}</Link>
+              <Link href="/rajwada/contact#book" className="mt-7 inline-block border border-[#C77B3F] px-7 py-3 text-xs font-bold uppercase tracking-[0.2em] text-[#C77B3F] transition hover:bg-[#C77B3F] hover:text-[#12100C]">{t.misc.bookRoom}</Link>
             </div>
           </article>
         ))}

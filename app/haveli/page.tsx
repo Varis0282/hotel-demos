@@ -23,7 +23,7 @@ export default function Home() {
           </h1>
           <p className="mt-5 text-lg text-[#5B615F]">{t.hero.sub}</p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Link href="/haveli/contact" className="rounded-lg bg-[#0F5E63] px-7 py-3.5 font-bold text-white shadow-lg transition hover:brightness-110">{t.hero.cta1}</Link>
+            <Link href="/haveli/contact#book" className="rounded-lg bg-[#0F5E63] px-7 py-3.5 font-bold text-white shadow-lg transition hover:brightness-110">{t.hero.cta1}</Link>
             <a href={`tel:${hotel.phoneRaw}`} className="rounded-lg border-2 border-[#0F5E63] px-7 py-3.5 font-bold text-[#0F5E63] transition hover:bg-[#0F5E63]/5">{t.hero.cta2}</a>
           </div>
           <p className="mt-5 flex items-center gap-2 text-sm font-semibold text-emerald-700"><CheckCircle2 className="h-4 w-4" />{t.hero.open}</p>
@@ -53,7 +53,7 @@ export default function Home() {
                 <h3 className="font-[family-name:var(--font-lora)] text-xl font-bold text-[#0F5E63]">{pick(r, lang).title}</h3>
                 <p className="mt-1 text-sm font-semibold text-[#B98A2F]">{pick(r, lang).occupancy}</p>
                 <p className="mt-2 text-sm text-[#5B615F]">{pick(r, lang).desc}</p>
-                <Link href="/haveli/contact" className="mt-4 inline-block rounded-lg bg-[#B98A2F] px-4 py-2 text-sm font-bold text-white hover:brightness-110">{t.misc.bookRoom}</Link>
+                <Link href="/haveli/contact#book" className="mt-4 inline-block rounded-lg bg-[#B98A2F] px-4 py-2 text-sm font-bold text-white hover:brightness-110">{t.misc.bookRoom}</Link>
               </div>
             </article>
           ))}

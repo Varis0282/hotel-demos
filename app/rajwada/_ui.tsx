@@ -50,7 +50,7 @@ export function Nav() {
           ))}
           <Link href="/" className="text-[11px] uppercase tracking-widest text-[#EFE7DA]/35 hover:text-[#EFE7DA]/70">← All demos</Link>
           <LangToggle className="border border-[#EFE7DA]/25 px-3 py-1 text-xs font-bold hover:border-[#C77B3F] hover:text-[#C77B3F]" />
-          <Link href="/rajwada/contact" className="border border-[#C77B3F] px-5 py-2.5 text-xs font-bold uppercase tracking-[0.2em] text-[#C77B3F] transition hover:bg-[#C77B3F] hover:text-[#12100C]">{t.nav.book}</Link>
+          <Link href="/rajwada/contact#book" className="border border-[#C77B3F] px-5 py-2.5 text-xs font-bold uppercase tracking-[0.2em] text-[#C77B3F] transition hover:bg-[#C77B3F] hover:text-[#12100C]">{t.nav.book}</Link>
         </nav>
         <button onClick={() => setOpen(!open)} className="ml-auto lg:hidden" aria-label="Menu">{open ? <X /> : <Menu />}</button>
       </div>
@@ -164,7 +164,7 @@ export function CTABand() {
         <h2 className="mt-4 font-[family-name:var(--font-cormorant)] text-4xl font-semibold md:text-5xl">{t.sections.ctaTitle}</h2>
         <p className="mt-4 text-[#EFE7DA]/60">{t.sections.ctaSub}</p>
         <div className="mt-9 flex flex-wrap justify-center gap-4">
-          <Link href="/rajwada/contact" className="bg-[#C77B3F] px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-[#12100C] transition hover:brightness-110">{t.hero.cta1}</Link>
+          <Link href="/rajwada/contact#book" className="bg-[#C77B3F] px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-[#12100C] transition hover:brightness-110">{t.hero.cta1}</Link>
           <a href={`tel:${hotel.phoneRaw}`} className="border border-[#EFE7DA]/30 px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] transition hover:border-[#EFE7DA]">{t.hero.cta2}</a>
         </div>
       </div>
